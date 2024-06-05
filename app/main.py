@@ -1,10 +1,7 @@
 import re
+import sys
 
-def convert_markdown_to_html(
-        input_file: str, 
-        output_file: str, 
-        lang: str
-):
+def convert_markdown_to_html(input_file: str, output_file: str, lang: str):
     """
     Convert a Markdown file to an HTML file. - PyDown Mehranalam
 
@@ -71,6 +68,15 @@ def convert_markdown_to_html(
 
     print(f"PyDown: Conversion complete: {output_file}")
 
-input_md_file = "input.md"
-output_html_file = "example.html"
-convert_markdown_to_html(input_md_file, output_html_file, "en")
+if __name__ == "__main__":
+    # Check if the correct number of arguments are provided
+    if len(sys.argv) != 4:
+        print("Usage: python main.py <input_md_file> <output_html_file> <lang>")
+        sys.exit(1)
+
+    # Get the input and output file names and language from the arguments
+    input_md_file = sys.argv[1]
+    output_html_file = sys.argv[2]
+    lang = sys.argv[3]
+
+    convert_markdown_to_html(input_md_file, output_html_file, lang)
