@@ -3,7 +3,7 @@ A simple project to convert .md files into a coherent .html file. a simple Markd
 
 #### markdown ruls
 
-```
+```markdown
 Headers: #, ##, ###, etc.
 Bold text: **bold** or __bold__
 Italic text: *italic* or _italic_
