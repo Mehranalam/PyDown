@@ -1,6 +1,12 @@
 # PyDown
 A simple project to convert .md files into a coherent .html file. a simple Markdown-to-HTML converter in Python `without using the markdown library or other library` **just use regex**. We'll manually parse the Markdown syntax and convert it to HTML. This approach will cover basic Markdown features such as headers, bold text, italic text, links, and lists.
 
+### Usage
+
+```bash
+$ python3 main.py input_md_file output_html_file lang
+```
+
 #### markdown ruls
 
 ```markdown
